@@ -144,10 +144,10 @@ View 裡面的 Ruby 的變數即是當使用者要瀏覽該頁面的時候，所
 
 以下面程式舉例：
 
-<% if errors %>                 <%# 如果出現錯誤 %>
+<% if errors %>                 <%# 如果出現錯誤，條件 不顯示 %>
     <ul style="color: red">
     <% errors.each do |error| %>
-        <li><%= error %></li>   <%# 會出現"錯誤"字樣 %>
+        <li><%= error %></li>   <%# 會出現"錯誤"字樣，會顯示 %>
     <% end %>
     </ul>
 <% end %>
